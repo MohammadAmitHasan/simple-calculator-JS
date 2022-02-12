@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Hasan's Calculator</title>
+    <title>Hasan's Simple Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -24,63 +24,93 @@
             <!-- Buttons Area -->
             <div class="bg-violet-100 p-4 rounded-b-lg">
                 <div class="grid grid-cols-4 gap-3">
-                    <div class="bg-red-500 rounded-full  flex justify-center">
-                        <button id="AC" class="text-3xl text-center font-semibold my-2 text-white">AC</button>
+                    <div class="flex justify-center">
+                        <button id="AC"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-red-500 w-12 h-12 rounded-full">
+                            <div class="mb-1">AC</div>
+                        </button>
                     </div>
-                    <div class="bg-violet-700 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 text-white">√</button>
+                    <div class="flex justify-center">
+                        <button id="root"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-12 rounded-full">√</button>
                     </div>
-                    <div class="bg-violet-700 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 text-white">/</button>
+                    <div class="flex justify-center">
+                        <button id="division"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-12 rounded-full">
+                            <div class="mb-2">÷</div>
+                        </button>
                     </div>
-                    <div class="bg-violet-700 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold pt-2.5 text-white">*</button>
+                    <div class="flex justify-center">
+                        <button id="multiplication"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-12 rounded-full">
+                            <div class="mt-2">*</div>
+                        </button>
                     </div>
 
-                    <div class="bg-violet-300 rounded-full flex justify-center">
-                        <button class="text-3xl font-semibold button">7</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold button my-2 bg-violet-300 w-12 h-12 rounded-full">7</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">8</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">8</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">9</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">9</button>
                     </div>
-                    <div class="bg-violet-700 rounded-full flex justify-center">
-                        <button class="text-3xl text-center font-semibold mb-1 text-white">+</button>
+                    <div class="flex justify-center">
+                        <button id="addition"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-12 rounded-full">
+                            <div class="mb-2">+</div>
+                        </button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">4</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">4</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">5</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">5</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">6</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">6</button>
                     </div>
-                    <div class="bg-violet-700 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold mb-2 text-white">-</button>
+                    <div class="flex justify-center">
+                        <button id="subtraction"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-12 rounded-full">
+                            <div class="mb-2">-</div>
+
+                        </button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">1</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">1</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">2</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">2</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">3</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">3</button>
                     </div>
-                    <div class="bg-violet-900 rounded-full  flex justify-center row-span-2">
-                        <button class="text-3xl text-center font-semibold mb-3 text-white">=</button>
+                    <div class="flex justify-center row-span-2">
+                        <button id="result"
+                            class="text-3xl text-center font-semibold my-2 text-white bg-violet-600 w-12 h-32 rounded-full">=</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">0</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">0</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">00</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full">00</button>
                     </div>
-                    <div class="bg-violet-300 rounded-full  flex justify-center">
-                        <button class="text-3xl text-center font-semibold my-2 button">.</button>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-3xl text-center font-semibold my-2 button bg-violet-300 w-12 h-12 rounded-full button">.</button>
                     </div>
 
                 </div>
