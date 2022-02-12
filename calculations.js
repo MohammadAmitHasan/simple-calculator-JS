@@ -3,12 +3,13 @@ let valueKeeper;
 let operation;
 let newV;
 
-// Screen Clear event handle
+// Clearing screen function
 function screenClear() {
     const screen = document.getElementById('screen');
     screen.innerText = '0';
 }
 
+// Getting screen value in number
 function getScreenNumber() {
     const screen = document.getElementById('screen');
     const screenText = screen.innerText;
@@ -47,25 +48,25 @@ for (const button of buttons) {
 document.getElementById('addition').addEventListener('click', function () {
     valueKeeper = getScreenNumber();
     operation = 'addition';
-    screenClear();
+    newV = '';
 });
 // Multiplication event
 document.getElementById('multiplication').addEventListener('click', function () {
     valueKeeper = getScreenNumber();
     operation = 'multiplication';
-    screenClear();
+    newV = '';
 });
 // Division event
 document.getElementById('division').addEventListener('click', function () {
     valueKeeper = getScreenNumber();
     operation = 'division';
-    screenClear();
+    newV = '';
 });
 // subtraction event
 document.getElementById('subtraction').addEventListener('click', function () {
     valueKeeper = getScreenNumber();
     operation = 'subtraction';
-    screenClear();
+    newV = '';
 });
 // Root event
 document.getElementById('root').addEventListener('click', function () {
